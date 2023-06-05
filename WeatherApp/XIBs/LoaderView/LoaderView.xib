@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Mwo-NN-Fs1" customClass="LoaderView" customModule="MovieSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yx-zn-dax">
+                    <rect key="frame" x="144.5" y="385.5" width="125" height="125"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="xVe-z2-hhg">
+                            <rect key="frame" x="44" y="44" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="xVe-z2-hhg" firstAttribute="centerY" secondItem="8yx-zn-dax" secondAttribute="centerY" id="TlV-L8-hu7"/>
+                        <constraint firstItem="xVe-z2-hhg" firstAttribute="centerX" secondItem="8yx-zn-dax" secondAttribute="centerX" id="oKh-9g-KKK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="2ct-4D-Iv6"/>
+            <color key="backgroundColor" white="0.0" alpha="0.25320778145695366" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8yx-zn-dax" firstAttribute="centerY" secondItem="Mwo-NN-Fs1" secondAttribute="centerY" id="1h1-jz-GBL"/>
+                <constraint firstItem="8yx-zn-dax" firstAttribute="width" secondItem="Mwo-NN-Fs1" secondAttribute="width" multiplier="0.301932" id="2w4-eY-QoB"/>
+                <constraint firstItem="8yx-zn-dax" firstAttribute="height" secondItem="Mwo-NN-Fs1" secondAttribute="height" multiplier="0.139509" id="ZCU-ZI-P49"/>
+                <constraint firstItem="8yx-zn-dax" firstAttribute="centerX" secondItem="Mwo-NN-Fs1" secondAttribute="centerX" id="dS4-Ig-Yag"/>
+            </constraints>
+            <connections>
+                <outlet property="viewSpinner" destination="8yx-zn-dax" id="gCu-RG-XSR"/>
+            </connections>
+            <point key="canvasLocation" x="-64" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
